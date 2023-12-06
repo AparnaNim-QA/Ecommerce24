@@ -1,0 +1,47 @@
+package IMPJAVAProgram;
+
+import java.util.Scanner;
+
+public class ArmStrongno2 
+{
+
+	public static void main(String[] args)
+	{
+		
+		armstrong2();
+	}
+	
+	public static void armstrong2()
+	{
+		//int=153...(1*1*1+5*5*5+3*3*3=153)
+		
+		int number,c,rem,arm=0;
+		
+		System.out.println("enter no=");
+		
+		  Scanner obj =new Scanner(System.in);
+	       number=obj.nextInt();
+	       c=number;
+	       
+	       while(number>0)
+	       {
+	    	  rem=number%10;    
+	    	  arm=(rem*rem*rem)+arm;
+	    	  number=number/10;
+	    	   
+	       }
+	       
+	       if(c==arm)
+	       {
+	    	   System.out.println("number is armstrong");
+	       }
+	       else
+	       {
+	    	   System.out.println("number not armstrong");
+	       }
+	       
+	       
+		
+	}
+
+}
